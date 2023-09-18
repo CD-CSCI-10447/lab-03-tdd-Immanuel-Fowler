@@ -262,49 +262,136 @@ public class CalculatorTest {
 
     @Test
     public void arcTanTest01() {
+        Calculator calc = new Calculator();
         double input = 0.5;
-        double expected = 0.4636476090008061;
-        double actual = Math.atan(input);
+        double expected = Math.atan(input);
+        double actual = calc.arcTan(input);
         assertEquals(expected, actual);
     }
 
     @Test
     public void arcTanTest02() {
+        Calculator calc = new Calculator();
         double input = -0.5;
-        double expected = -0.4636476090008061;
-        double actual = Math.atan(input);
+        double expected = Math.atan(input);
+        double actual = calc.arcTan(input);
         assertEquals(expected, actual);
     }
 
     @Test
     public void arcTanTest03() {
+        Calculator calc = new Calculator();
         double input = 0.0;
-        double expected = 0.0;
-        double actual = Math.atan(input);
+        double expected = Math.atan(input);
+        double actual = calc.arcTan(input);
         assertEquals(expected, actual);
     }
 
     @Test
     public void sinTest01() {
+        Calculator calc = new Calculator();
         double input = 0.5;
-        double expected = 0.479425538604203;
-        double actual = Math.sin(input);
+        double expected = Math.sin(input);
+        double actual = calc.sin(input);
         assertEquals(expected, actual, 1.0E-15);
     }
 
     @Test
     public void sinTest02() {
+        Calculator calc = new Calculator();
         double input = -0.5;
-        double expected = -0.479425538604203;
-        double actual = Math.sin(input);
+        double expected = Math.sin(input);
+        double actual = calc.sin(input);
         assertEquals(expected, actual, 1.0E-15);
     }
 
     @Test
     public void sinTest03() {
+        Calculator calc = new Calculator();
         double input = 0.0;
-        double expected = 0.0;
-        double actual = Math.sin(input);
+        double expected = Math.sin(input);
+        double actual = calc.sin(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void cosTest01(){
+        Calculator calc = new Calculator();
+        double input = 1.0;
+        double expected = Math.cos(input);
+        double actual = calc.cos(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void cosTest02(){
+        Calculator calc = new Calculator();
+        double input = 2.0;
+        double expected = Math.cos(input);
+        double actual = calc.cos(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void cosTest03(){
+        Calculator calc = new Calculator();
+        double input = 3.0;
+        double expected = Math.cos(input);
+        double actual = calc.cos(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void tanTest01(){
+        Calculator calc = new Calculator();
+        double input = 0.0;
+        double expected = Math.tan(input);
+        double actual = calc.tan(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void tanTest02(){
+        Calculator calc = new Calculator();
+        double input = 2.0;
+        double expected = Math.tan(input);
+        double actual = calc.tan(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void tanTest03(){
+        Calculator calc = new Calculator();
+        double input = 6.0;
+        double expected = Math.tan(input);
+        double actual = calc.tan(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void sqRootTest01(){
+        Calculator calc = new Calculator();
+        double input = 6.0;
+        double expected = Math.sqrt(input);
+        double actual = calc.sqRoot(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void sqRootTest02(){
+        Calculator calc = new Calculator();
+        double input = 4.0;
+        double expected = Math.sqrt(input);
+        double actual = calc.sqRoot(input);
+        assertEquals(expected, actual, 1.0E-15);
+    }
+
+    @Test
+    public void sqRootTest03(){
+        Calculator calc = new Calculator();
+        double input = 68.0;
+        double expected = Math.sqrt(input);
+        double actual = calc.sqRoot(input);
         assertEquals(expected, actual, 1.0E-15);
     }
 

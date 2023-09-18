@@ -2,7 +2,6 @@ package edu.desu.partB;
 
 public abstract class Animal {
     private String name;
-    private String species;
 
     public Animal(String name){
         this.name = name;
@@ -13,7 +12,14 @@ public abstract class Animal {
     }
 
     public String GetSpecies(){
-        return species;
+        if (this instanceof Cat){
+            return "cat";
+        }else if (this instanceof Dog){
+            return "dog";
+        }else if (this instanceof Bird){
+            return "bird";
+        }
+        return "";
     }
 
     public abstract String MakeSound();
